@@ -9,7 +9,22 @@ public class Chipping extends GolfStroke
 	{
 		this.setGreenLevel("Flat");
 		this.setGreenSpeed("Medium");
-//		this.setStrokes("")
+		this.setStrokes(setupStrokes());
+	}
+	
+
+
+	private ArrayList<String> setupStrokes()
+	{
+	
+		ArrayList<String> distance = new ArrayList<String>();
+		
+		distance.add("150 yards");
+		distance.add("100 yards");
+		distance.add("50 yards");
+		distance.add("200 yards");
+
+		return distance;
 	}
 
 	@Override

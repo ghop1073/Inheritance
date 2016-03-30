@@ -9,12 +9,12 @@ public abstract class GolfStroke implements Gaymes
 	private String greenLevel;
 	private String greenSpeed;
 
-	public ArrayList<String> getPutts()
+	public ArrayList<String> getStrokes()
 	{
 		return strokes;
 	}
 
-	public void setPutts(ArrayList<String> strokes)
+	public void setStrokes(ArrayList<String> strokes)
 	{
 		this.strokes = strokes;
 	}
