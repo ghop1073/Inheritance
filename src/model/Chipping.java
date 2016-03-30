@@ -1,6 +1,49 @@
 package model;
 
-public class Chipping
+import java.util.ArrayList;
+
+public class Chipping extends GolfStroke
 {
 
+	public Chipping()
+	{
+		this.setGreenLevel("Flat");
+		this.setGreenSpeed("Medium");
+//		this.setStrokes("")
+	}
+
+	@Override
+	public boolean isFun()
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isSeries()
+	{
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isMulitplayer()
+	{
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public void gameRate(int rating)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void gameCatagory(String catagory)
+	{
+		// TODO Auto-generated method stub
+		
+	}
 }
