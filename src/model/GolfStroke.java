@@ -2,7 +2,7 @@ package model;
 
 import java.util.ArrayList;
 
-public abstract class GolfStroke implements Gaymes
+public abstract class GolfStroke implements Gaymes, Comparable
 {
 
 	private ArrayList<String> strokes;
@@ -37,5 +37,23 @@ public abstract class GolfStroke implements Gaymes
 	public void setGreenSpeed(String greenSpeed)
 	{
 		this.greenSpeed = greenSpeed;
+	}
+	
+	public String toString()
+	{
+		String golfStrokeDescription = "This is a stroke object of type "+ this.getClass().getName();
+		
+		return golfStrokeDescription;
+	}
+	
+	public int compareTo(Object compared)
+	{
+		int comparedValue = Integer.MIN_VALUE;
+		
+		if(compared instanceof Gaymes)
+		{
+			
+		}
+		return comparedValue;
 	}
 }
